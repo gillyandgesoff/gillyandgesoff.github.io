@@ -87,8 +87,8 @@ td p{
 #gesoff.open .background{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-filter: blur(20px) brightness(1.8) saturate(0.3);
-    filter: blur(20px) brightness(1.8) saturate(0.3);
+    -webkit-filter: blur(20px) brightness(0.75);
+    filter: blur(20px) brightness(0.75);
 }
 .open p{
     opacity: 1;
@@ -111,7 +111,7 @@ td p{
 }
 #gesoff .hero_title{
     position: absolute;
-    color: #ac8b65;
+    color: #fcf2f9;
     font-size: 100px;
     font-family: 'Oxygen', sans-serif;
     font-weight: 300;
@@ -121,11 +121,7 @@ td p{
 .hero_title{
     bottom: 50%;
 }
-#gilly .hero_text{
+.hero_text{
     color: #fff;
     font-weight:300;
-}
-#gesoff .hero_text{
-    color: #000;
-    right: 5vw;
 }
