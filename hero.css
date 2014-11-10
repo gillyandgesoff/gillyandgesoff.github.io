@@ -70,12 +70,12 @@ td p{
 }
 #gilly .background {
     left: 0;
-    background: URL("http://38.media.tumblr.com/2dd4c9276a71638fe4bf488bfd1b6952/tumblr_n87995i7Zj1tdkq6yo1_1280.png") no-repeat 10% center scroll;
+    background: URL("/img/Gilly.jpg") no-repeat 10% center scroll;
     background-size: cover;
 }
 #gesoff .background{
     right: 0;
-    background: URL("http://38.media.tumblr.com/16f097b720f2b1c3b33c5a1c8e871a1b/tumblr_n6rj6h1qJw1tdkq6yo1_1280.png") no-repeat 90% center scroll;
+    background: URL("/img/Gesoff.jpg") no-repeat 90% center scroll;
     background-size: cover;
 }
 #gilly.open .background{
