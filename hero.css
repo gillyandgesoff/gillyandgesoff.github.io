@@ -1,0 +1,131 @@
+#hero_wrapper{
+    width: 100%;
+    height: 100%;
+}
+#hero_table{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(229, 236, 242, 0.71);
+    z-index: 9;
+}
+tr{
+    padding: 0;
+    margin: 0;
+}
+td{
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 16px #000;
+    cursor: pointer;
+}
+.hero_contents{
+    overflow:hidden;
+}
+td:last-child {
+    width: 100%;
+}
+td p{
+    -webkit-transition: opacity 0.60s ease-in-out;
+    transition: opacity 0.60s ease-in-out;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 60vw;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+#gilly.open{
+    -webkit-transition: all 0.40s ease-in-out;
+    transition: all 0.40s ease-in-out;
+    width: 70% !important;
+}
+#gilly.closed{
+    -webkit-transition: all 0.40s ease-in-out;
+    transition: all 0.40s ease-in-out;
+    width: 30% !important;
+}
+#gesoff.open{
+    -webkit-transition: all 0.40s ease-in-out;
+    transition: all 0.40s ease-in-out;
+}
+.background {
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#gilly .background {
+    left: 0;
+    background: URL("http://38.media.tumblr.com/2dd4c9276a71638fe4bf488bfd1b6952/tumblr_n87995i7Zj1tdkq6yo1_1280.png") no-repeat 10% center scroll;
+    background-size: cover;
+}
+#gesoff .background{
+    right: 0;
+    background: URL("http://38.media.tumblr.com/16f097b720f2b1c3b33c5a1c8e871a1b/tumblr_n6rj6h1qJw1tdkq6yo1_1280.png") no-repeat 90% center scroll;
+    background-size: cover;
+}
+#gilly.open .background{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: blur(20px) brightness(0.7);
+    filter: blur(20px) brightness(0.7);
+}
+#gesoff.open .background{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: blur(20px) brightness(1.8) saturate(0.3);
+    filter: blur(20px) brightness(1.8) saturate(0.3);
+}
+.open p{
+    opacity: 1;
+}
+.hero_contents{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+#gilly .hero_title{
+    position: absolute;
+    left: 20%;
+    color: #fcf2ef;
+    font-size: 150px;
+    font-family: 'Tangerine', sans-serif;
+    font-weight: 400;
+}
+#gesoff .hero_title{
+    position: absolute;
+    color: #ac8b65;
+    font-size: 100px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    right: 20%;
+    bottom: 51%;
+}
+.hero_title{
+    bottom: 50%;
+}
+#gilly .hero_text{
+    color: #fff;
+    font-weight:300;
+}
+#gesoff .hero_text{
+    color: #000;
+    right: 5vw;
+}
