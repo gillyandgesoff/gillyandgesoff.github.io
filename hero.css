@@ -70,12 +70,12 @@ td p{
 }
 #gilly .background {
     left: 0;
-    background: URL("/img/Gilly.jpg") no-repeat 10% center scroll;
+    background: URL("img/Gilly.jpg") no-repeat 10% center scroll;
     background-size: cover;
 }
 #gesoff .background{
     right: 0;
-    background: URL("/img/Gesoff.jpg") no-repeat 90% center scroll;
+    background: URL("img/Gesoff.jpg") no-repeat 90% center scroll;
     background-size: cover;
 }
 #gilly.open .background{
