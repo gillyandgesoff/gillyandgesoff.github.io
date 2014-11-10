@@ -72,7 +72,7 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
     background-size: cover;
 }
 #businessbreak{
-    background: URL("http://lorempixel.com/g/1700/900/business/5") no-repeat center 0 fixed;
+    background: #ddd no-repeat center 0 fixed;
     background-size: cover;
 }
 #yanice{
