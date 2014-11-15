@@ -35,12 +35,12 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
     padding: 6px;
 }
 .light{
-    background: URL("http://static.tumblr.com/ndk5iis/2Kbnait6a/noisy-texture-100x100-o5-d10-c-f5f5f5-t0.png");
+    background: URL("img/noisy-texture-100x100-o5-d10-c-f5f5f5-t0.png");
     color: #111;
     text-shadow: 0 1px 1px #eee;
 }
 .dark{
-    background: URL("http://static.tumblr.com/ndk5iis/5X5nakeaf/noisy-texture-100x100-o5-d10-c-1f1f1f-t0.png");
+    background: URL("img/noisy-texture-100x100-o5-d10-c-1f1f1f-t0.png");
     color: #eee;
     text-shadow: 0 0 10px #000;
 }
@@ -58,7 +58,7 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
     z-index: 2;
 }
 #make .title{
-    background: URL("http://static.tumblr.com/ndk5iis/YPhnajlh3/stroma.png") no-repeat center 0 fixed;
+    background: URL("img/stroma.jpg") no-repeat center 0 fixed;
     background-size: cover;
     color: #eee;
     text-shadow: 0 0 17px #000;
@@ -68,7 +68,7 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
     height: 105%;
 }
 #stromabreak{
-    background: URL("http://static.tumblr.com/ndk5iis/YPhnajlh3/stroma.png") no-repeat center 0 fixed;
+    background: URL("img/stroma.jpg") no-repeat center 0 fixed;
     background-size: cover;
 }
 #businessbreak{
@@ -76,7 +76,7 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
     background-size: cover;
 }
 #yanice{
-    background: URL('http://41.media.tumblr.com/47a224ec72a05c716705c33fb35e18cf/tumblr_n7hisp8VbE1tdkq6yo1_1280.jpg') no-repeat center center scroll;
+    background: URL("img/tumblr_n7hisp8VbE1tdkq6yo1_1280.jpg") no-repeat center center scroll;
     background-size: cover;
 }
 @media all and (max-device-width : 800px) {
