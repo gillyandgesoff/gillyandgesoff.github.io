@@ -106,3 +106,14 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
         background: #3e0143;
     }
 }
+@media only screen and (max-device-width : 1024px) {
+    #make .title, #stromabreak, #businessbreak{
+        background: #3e0143;
+    }
+    section.fullscreen{
+        min-height: 60%;
+    }
+    .break{
+        height: 5%;
+    }
+}
