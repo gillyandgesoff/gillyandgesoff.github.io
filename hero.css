@@ -132,7 +132,7 @@ td p{
     color: #fff;
     font-weight:300;
 }
-@media all and (max-width : 600px), (orientation : portrait) {
+@media all and (max-width : 600px) and (orientation : portrait) {
     #hero_wrapper{
         height: 50%;
         -webkit-transition: height 0.3s ease-out;

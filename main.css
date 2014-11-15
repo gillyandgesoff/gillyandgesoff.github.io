@@ -79,7 +79,7 @@ section.fullscreen .section_wrapper, section.halfscreen .section_wrapper {
     background: URL("img/tumblr_n7hisp8VbE1tdkq6yo1_1280.jpg") no-repeat center center scroll;
     background-size: cover;
 }
-@media all and (max-width : 800px) {
+@media all and (max-width : 600px) {
 	body {
 		-webkit-text-size-adjust: none;
 	}
