@@ -47,7 +47,7 @@ td p{
     height: 50%;
     width: 60vw;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: none;
 }
 #gilly.open{
     -webkit-transition: all 0.40s ease-in-out;
@@ -98,6 +98,7 @@ td p{
     transition: opacity 0.60s ease-in-out, visibility 0s linear 0s;
     opacity: 1;
     visibility: visible;
+    -webkit-overflow-scrolling: touch;
 }
 .hero_contents{
     position: absolute;
