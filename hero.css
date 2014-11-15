@@ -124,7 +124,6 @@ td p{
     font-family: 'Oxygen', sans-serif;
     font-weight: 300;
     right: 20%;
-    bottom: 51%;
 }
 .hero_title{
     bottom: 50%;
@@ -138,5 +137,8 @@ td p{
         height: 50%;
         -webkit-transition: height 0.3s ease-out;
         transition: height 0.3s ease-out;
+    }
+    .hero_title{
+        font-size: 60px !important;
     }
 }
