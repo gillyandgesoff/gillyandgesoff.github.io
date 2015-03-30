@@ -1,0 +1,44 @@
+section#hero{
+    background: url('img/club-concert-dancing-BW.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: table;
+}
+section#hero .content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#title{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    color: #fff;
+}
+#title h1{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 60px;
+    border-radius: 10px;
+}
+#title div{
+    padding: 15px 0;
+}
+#title a, #title h2{
+    display: inline;
+    background: rgba(0,0,0,0.8);
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#title a{
+    text-transform: lowercase;
+    text-decoration: none;
+}
+#title a:hover{
+    background: #860491;
+}
+#title h2{
+    text-transform: uppercase;
+}

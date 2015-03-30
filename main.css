@@ -1,5 +1,8 @@
 html, body{
+    width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Questrial', sans-serif;
@@ -13,4 +16,146 @@ h2{
 }
 h3{
     font-size: 20px;
+}
+article{
+    width: 100%;
+    height: 100%;
+}
+section.fullscreen{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    -webkit-user-select: none;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    margin: 15px;
+    font-size: 20px;
+}
+nav button#disclosure{
+}
+@media(max-width:767px){
+    nav{
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        max-width: 90%;
+        height: 100%;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    nav button#disclosure{
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+    }
+    nav.open{
+        visibility: visible;
+    }
+    nav #logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media(min-width:768px){
+   nav{
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        max-width: 90%;
+        height: 100%;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    nav button#disclosure{
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+    }
+    nav.open{
+        visibility: visible;
+    }
+    nav #logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media(min-width:992px){
+    nav{
+        white-space: nowrap;
+        visibility: visible;
+        width: 100%;
+        max-width: 100%;
+        height: 50px;
+        text-align: left;
+        overflow-x: scroll;
+    }
+    nav ul, nav li, nav img{
+        display: inline;
+        padding: 0;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+    nav li{
+        background: -webkit-gradient(linear, left top, right top, color-stop(89%,#000000), color-stop(99%,rgba(0, 0, 0, 0))) no-repeat center center fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    nav button#disclosure{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media(min-width:1200px){
+    nav{
+        white-space: nowrap;
+        width: 50px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-x:hidden;
+    }
+    nav:hover{
+        width: initial;
+    }
+    nav ul{
+        display: block;
+        white-space: normal;
+        word-wrap: break-word;
+        margin: 0;
+        padding: 0;
+    }
+    nav li{
+        display: block;
+        margin: 0;
+        padding: 0 10px;
+        white-space: nowrap;
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%,#000000), color-stop(90%,rgba(0, 0, 0, 0)));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    nav:hover li{
+        -webkit-text-fill-color: #000;
+    }
 }
