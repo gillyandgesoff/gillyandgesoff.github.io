@@ -27,10 +27,11 @@ section.fullscreen{
 }
 nav{
     position: fixed;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0,0,0,0.9);
     z-index: 10;
     margin: 0;
     padding: 0;
+    color: #fff;
     -webkit-overflow-scrolling: touch;
     -webkit-user-select: none;
 }
@@ -43,17 +44,23 @@ nav li{
     margin: 15px;
     font-size: 20px;
 }
-nav button#disclosure{
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c705d8;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #c705d8;
+    background: none;
 }
 @media(max-width:767px){
     nav{
         visibility: hidden;
+        width: 0;
+        height: 0;
         position: fixed;
         top: 0;
         left: 0;
-        width: 300px;
-        max-width: 90%;
-        height: 100%;
         text-align: center;
         overflow-y: scroll;
     }
@@ -67,6 +74,9 @@ nav button#disclosure{
     }
     nav.open{
         visibility: visible;
+        width: 250px;
+        max-width: 90%;
+        height: 100%;
     }
     nav #logo{
         width: 50px;
@@ -74,34 +84,6 @@ nav button#disclosure{
     }
 }
 @media(min-width:768px){
-   nav{
-        visibility: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 300px;
-        max-width: 90%;
-        height: 100%;
-        text-align: center;
-        overflow-y: scroll;
-    }
-    nav button#disclosure{
-        visibility: visible;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 50px;
-    }
-    nav.open{
-        visibility: visible;
-    }
-    nav #logo{
-        width: 50px;
-        height: 50px;
-    }
-}
-@media(min-width:992px){
     nav{
         white-space: nowrap;
         visibility: visible;
@@ -110,17 +92,27 @@ nav button#disclosure{
         height: 50px;
         text-align: left;
         overflow-x: scroll;
+        overflow-y: hidden;
     }
     nav ul, nav li, nav img{
+        position: relative;
         display: inline;
         padding: 0;
         line-height: 50px;
         vertical-align: middle;
     }
+    nav ul{
+        margin-right: 11%;
+    }
     nav li{
-        background: -webkit-gradient(linear, left top, right top, color-stop(89%,#000000), color-stop(99%,rgba(0, 0, 0, 0))) no-repeat center center fixed;
+        background: -webkit-gradient(linear, left top, right top, color-stop(89%,#fff), color-stop(99%,rgba(0, 0, 0, 0))) no-repeat center center fixed;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    nav li:hover{
+        background: none;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: none;
     }
     nav button#disclosure{
         display: none;
@@ -130,14 +122,17 @@ nav button#disclosure{
 @media(min-width:1200px){
     nav{
         white-space: nowrap;
-        width: 50px;
+        width: 80px;
         height: 100%;
         padding: 0;
         margin: 0;
         overflow-x:hidden;
+        overflow-y: scroll;
+        opacity: 0.5;
     }
     nav:hover{
         width: initial;
+        opacity: 1;
     }
     nav ul{
         display: block;
@@ -151,11 +146,13 @@ nav button#disclosure{
         margin: 0;
         padding: 0 10px;
         white-space: nowrap;
-        background: -webkit-gradient(linear, left top, right top, color-stop(50%,#000000), color-stop(90%,rgba(0, 0, 0, 0)));
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%,#fff), color-stop(90%,rgba(0, 0, 0, 0)));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     nav:hover li{
-        -webkit-text-fill-color: #000;
+        backround: none;
+        color: #fff;
+        -webkit-text-fill-color: #fff;
     }
 }
