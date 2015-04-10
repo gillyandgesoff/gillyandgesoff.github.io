@@ -1,0 +1,7 @@
+<svg width="535px" height="535px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="logo"> <!-- cubic-bezier(.68,.18,.68,.96)-->
+        <circle cx="100" cy="100" r="100" fill="#af06be" id="1"></circle>
+        <circle cx="435" cy="190" r="100" fill="#af06be" id="2"></circle>
+        <circle cx="190" cy="435" r="100" fill="#af06be" id="3"></circle>
+    </g>
+</svg>
